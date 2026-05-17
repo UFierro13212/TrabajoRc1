@@ -74,4 +74,14 @@ int main() {
     } else {
         printf("El contrato NO es factible. No se recomienda aceptar el pedido.\n");
 
-        
+        if (totalHoras > horasDisponibles) {
+            printf("Faltan %.2f horas de trabajo.\n", totalHoras - horasDisponibles);
+        }
+
+        if (totalIngredientes > ingredientesDisponibles) {
+            printf("Faltan %d ingredientes.\n", totalIngredientes - ingredientesDisponibles);
+        }
+    }
+
+    return 0;
+}
