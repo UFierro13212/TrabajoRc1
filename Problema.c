@@ -51,4 +51,22 @@ int main() {
         totalHoras = totalHoras + (cantidad[i] * tiempoPorPlato[i]);
         totalIngredientes = totalIngredientes + (cantidad[i] * ingredientesPorPlato[i]);
     }
+
+    printf("\n=== RESUMEN DEL PEDIDO ===\n");
+
+    for (i = 0; i < cantidadPlatos; i++) {
+        printf("\nPlato: %s", nombres[i]);
+        printf("\nCantidad: %d", cantidad[i]);
+        printf("\nTiempo total: %.2f horas", cantidad[i] * tiempoPorPlato[i]);
+        printf("\nIngredientes total: %d\n", cantidad[i] * ingredientesPorPlato[i]);
+    }
+
+    printf("\nHoras necesarias: %.2f", totalHoras);
+    printf("\nHoras disponibles: %.2f", horasDisponibles);
+
+    printf("\nIngredientes necesarios: %d", totalIngredientes);
+    printf("\nIngredientes disponibles: %d\n", ingredientesDisponibles);
+
+    printf("\n=== RESULTADO ===\n");
+
     
