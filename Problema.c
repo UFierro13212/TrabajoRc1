@@ -15,7 +15,7 @@ int main() {
     float totalHoras = 0;
     int totalIngredientes = 0;
 
-    printf("SISTEMA DE CATERING Y EVENTOS ===\n\n");
+    printf("=== SISTEMA DE CATERING Y EVENTOS ===\n\n");
 
     printf("Cuantos tipos de platos va a preparar? (maximo 5): ");
     scanf("%d", &cantidadPlatos);
@@ -69,4 +69,9 @@ int main() {
 
     printf("\n=== RESULTADO ===\n");
 
-    
+    if (totalHoras <= horasDisponibles && totalIngredientes <= ingredientesDisponibles) {
+        printf("El contrato SI es factible. Se puede aceptar el pedido.\n");
+    } else {
+        printf("El contrato NO es factible. No se recomienda aceptar el pedido.\n");
+
+        
